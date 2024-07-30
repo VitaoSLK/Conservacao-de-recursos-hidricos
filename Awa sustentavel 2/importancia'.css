@@ -1,0 +1,105 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #DBF7FF;
+}
+
+header {
+    background: linear-gradient(to right, #A2EBFF, #4FD9FF);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+header button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+#menu {
+    background-color: #94E7FF;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    border: 1px solid #C3F0FF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #0095AB;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #0095AB;
+}
+
+#menu a:last-child {
+    border-bottom: none;
+}
+
+.hidden {
+    transform: scaleY(0);
+}
+
+#menu:not(.hidden) {
+    transform: scaleY(2);
+    transform: scaleX(1.4);
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: #BCF0FF;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 3000px;
+    width: 70%;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content p {
+    margin: 0;
+}
+
+h2{
+  color: #00C0FF;
+  text-align: center;
+}
+
+h3{
+  color: #008CBA;
+  text-align: center;
+}
+
+img{
+  width: 45%;
+}
+
+p{
+    text-align: left;
+}
